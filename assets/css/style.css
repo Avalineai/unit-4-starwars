@@ -1,0 +1,5 @@
+.obiwan-image, .luke-image, .sidious-image, .maul-image {
+    padding: 20px;
+    border: 1px solid black;
+    margin: 10px;
+}

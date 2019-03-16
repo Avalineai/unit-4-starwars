@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link type="text/css" rel="stylesheet" href="assets/css/reset.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+    <title>Star Wars Game</title>
+</head>
+
+<body>
+
+    Star Wars RPG!<br>
+    starting character list<br>
+    <div id="starters"></div>
+    Your Character<br>
+    </div>
+    <div id="yourchar"></div>
+    Enemies Available to Attack<br>
+    <div id="enemies"></div>
+    Fight Section<br>
+    <button class="attack">
+        Attack
+    </button><br>
+    
+    Defender<br>
+    <div id="defender"></div>
+
+
+    <!--
+game starts with 4 characters in starting character list - w/ varying hp, image has border and bg color
+
+(second) click on any [enemy] character moves clicked character to “Defender”
+click “Attack” button to attack character in “Defender” section - will display
+    “You attacked [Defender character] for ## damage.
+    [Defender character] attacked you back for ## damage.”
+    also update HP text for both [Your character] and [Defender character]
+each subsequent “Attack” click increases attack power
+if defeated, print “You have been defeated...GAME OVER!!!“, display restart button
+if win and enemies left, remove [Defender character] and print “You have defeated [Defender character], you can choose to fight another enemy”
+    if click attack with nothing in defender section, print “No enemy here” and DON’T increase attack power
+    click on any remaining enemy, move clicked character to Defender section and remove text below
+    attack until win or lose and repeat
+if win and no enemies left, print “You won!!!! GAME OVER!!!”
+
+
+
+
+
+    var startersTwo = $('<img>');
+    imagestartersTwo.addClass("luke-image");
+    imagestartersTwo.attr("src", "assets/images/lukeskywalker.jpeg");
+    $("#starters").append(startersTwo);  
+
+    var startersThree = $('<img>');
+    imagestartersThree.addClass("darthsid-image");
+    imagestartersThree.attr("src", "assets/images/darthsidious.jpeg");
+    $("#starters").append(startersThree);  
+
+    var startersFour = $('<img>');
+    imagestartersFour.addClass("darthmaul-image");
+    imagestartersFour.attr("src", "assets/images/darthmaul2.jpeg");
+    $("#starters").append(startersFour);
+
+
+-->
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script type="text/javascript" src="./assets/javascript/game.js"></script>
+
+
+
+
+
+
+</script>
+
+
+</body>
+
+</html>
